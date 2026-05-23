@@ -6,9 +6,10 @@ import { AuthModule } from './api/auth/auth.module';
 import { ArticleModule } from './api/article/article.module';
 import { ArtifactModule } from './api/artifact/artifact.module';
 import { ArtifactController } from './api/artifact/artifact.controller';
+import { CarsModule } from './api/cars/cars.module';
 
 @Module({
-  imports: [UsersModule, AuthModule, ArticleModule, ArtifactModule],
+  imports: [UsersModule, AuthModule, ArticleModule, ArtifactModule, CarsModule],
   controllers: [AppController, ArtifactController],
   providers: [AppService],
 })
