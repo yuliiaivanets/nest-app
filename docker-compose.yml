@@ -3,7 +3,7 @@ volumes:
 
 services:
   postgres:
-    container_name: nest-app
+    container_name: nest-app-db
     labels:
       org.springframework.boot.service-connection: postgres
     image: 'postgres:17'
